@@ -130,6 +130,8 @@ GameObject:
   - component: {fileID: 102525933}
   - component: {fileID: 102525932}
   - component: {fileID: 102525931}
+  - component: {fileID: 102525934}
+  - component: {fileID: 102525935}
   m_Layer: 7
   m_Name: Outer Circle
   m_TagString: Untagged
@@ -247,6 +249,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &102525934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102525930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54db2b5f1ccf0f5409932437b4769e00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletModifier
+  targetColor: {r: 0, g: 1, b: 0, a: 1}
+--- !u!114 &102525935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102525930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b81190981238ed64db4d37364d7b475d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SideBossBehaviour
 --- !u!1 &498468407
 GameObject:
   m_ObjectHideFlags: 0
@@ -852,6 +879,70 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 102525935}
+        m_TargetAssemblyTypeName: SideBossBehaviour, Assembly-CSharp
+        m_MethodName: OnButtonNorth
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 66d86f7c-b210-4a49-b82a-f681dc4ad320
+    m_ActionName: 'Player/ChangeRed[/XInputControllerWindows/buttonNorth]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 102525935}
+        m_TargetAssemblyTypeName: SideBossBehaviour, Assembly-CSharp
+        m_MethodName: OnButtonEast
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 1e27ab4d-cc90-4e2a-b4e0-d5ab19cb3d4a
+    m_ActionName: 'Player/ChangeBlue[/XInputControllerWindows/buttonWest]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 102525935}
+        m_TargetAssemblyTypeName: SideBossBehaviour, Assembly-CSharp
+        m_MethodName: OnButtonWest
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: b8a5f6d1-dede-41a2-af52-3347193cbd04
+    m_ActionName: 'Player/ChangeGreen[/XInputControllerWindows/buttonSouth]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 102525935}
+        m_TargetAssemblyTypeName: SideBossBehaviour, Assembly-CSharp
+        m_MethodName: OnButtonSouth
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 94232674-7213-4567-8872-9b52c5a330f8
+    m_ActionName: 'Player/ChangeYellow[/XInputControllerWindows/buttonEast]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: 
